@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="simulador_de_negocios:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/simulador_de_negocios_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="simulador_de_negocios/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="simulador_de_negocios" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
