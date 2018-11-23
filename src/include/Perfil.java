@@ -1,7 +1,7 @@
 package include;
 
 public class Perfil {
-
+    private int idperfil;
     private String nombre_usuario;
     private String apellido_p_usuario;
     private String apellido_m_usuario;
@@ -14,7 +14,8 @@ public class Perfil {
     private String ciudad_usuario;
     private String estado_usuario;
 
-    public Perfil(String nombre_usuario, String apellido_p_usuario, String apellido_m_usuario, String rfc_usuario, String email_usuario, String telefono_usuario, String domicilio_usuario, String colonia_usuario, String codigo_postal_usuario, String ciudad_usuario, String estado_usuario) {
+    public Perfil(int idperfil, String nombre_usuario, String apellido_p_usuario, String apellido_m_usuario, String rfc_usuario, String email_usuario, String telefono_usuario, String domicilio_usuario, String colonia_usuario, String codigo_postal_usuario, String ciudad_usuario, String estado_usuario) {
+        this.idperfil = idperfil;
         this.nombre_usuario = nombre_usuario;
         this.apellido_p_usuario = apellido_p_usuario;
         this.apellido_m_usuario = apellido_m_usuario;
@@ -26,6 +27,13 @@ public class Perfil {
         this.codigo_postal_usuario = codigo_postal_usuario;
         this.ciudad_usuario = ciudad_usuario;
         this.estado_usuario = estado_usuario;
+    }
+    public int getIdperfil() {
+        return idperfil;
+    }
+
+    public void setIdperfil(int idperfil) {
+        this.idperfil = idperfil;
     }
 
     public String getNombre_usuario() {
