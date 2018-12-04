@@ -7,6 +7,9 @@
         <element id="directory" name="classes">
           <element id="module-output" name="simulador_de_negocios" />
         </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="$USER_HOME$/Documents/mysql-connector-java-5.1.21.jar" />
+        </element>
       </element>
     </root>
   </artifact>

@@ -7,22 +7,11 @@
                     <li>
                         <a href="#!" class="waves-effect waves-block waves-light profile-button"
                            data-activates="document-dropdown">
-                            <i class="material-icons left">view_module</i>Perfil
+                            <i class="material-icons left">assignment_ind</i>Perfil
                         </a>
-                        <ul id="document-dropdown" class="dropdown-content" style="white-space: nowrap; opacity: 1; left: 1710.64px; position: absolute; top: 64px; display: none;">
-                            <li>
-                                <a href="text.jsp" class="grey-text text-darken-1">
-                                    <i class="material-icons">font_download</i>Escribir texto</a>
-                            </li>
-                            <li>
-                                <a href="file.jsp" class="grey-text text-darken-1">
-                                    <i class="material-icons">attach_file</i>Subir archivo</a>
-                            </li>
-                        </ul>
-                    </li>
                     <li>
                         <a href="manual.jsp">
-                            <i class="material-icons left">keyboard_tab</i>Usuario</a>
+                            <i class="material-icons left">account_circle</i>Usuario</a>
                     </li>
                     <li><a href="acercade.jsp"><i class="material-icons left">help</i>Acerca de</a></li>
                     <li>
