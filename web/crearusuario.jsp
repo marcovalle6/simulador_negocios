@@ -3,10 +3,11 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <%
-    int idusuario = 0;
     String usuario = request.getParameter("nombre");
     String password = request.getParameter("contrasena");
     String last_access = request.getParameter("fecha");
+
+    int idusuario = 0;
     int tipoUsuario_idtipoUsuario = 0;
 
     try {
@@ -18,9 +19,10 @@
     }
 
     Usuario nuevoUsuario = new Usuario(idusuario, usuario, password, last_access, tipoUsuario_idtipoUsuario);
+
     controladorUsuario cc = new controladorUsuario();
     if(cc.agregarUsuario(nuevoUsuario)) {
-        response.sendRedirect("perfil.jsp");
+        response.sendRedirect("index.jsp");
     } else {
         response.sendRedirect("usuario.jsp");
     }

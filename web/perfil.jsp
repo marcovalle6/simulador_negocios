@@ -38,7 +38,7 @@
 <!-- Login form -->
 
 <div class="row perfil">
-    <div class="col s12" action="/crearperfil.jsp" method="post">
+    <div class="col s12" action="/PerfilUsuario" method="post">
         <div class="card">
             <div class="row center">
 
@@ -55,7 +55,7 @@
 
                 <div class="form-field">
                     <label for="apellido_p_usuario" name="apellidoPaterno">Apellido Paterno</label>
-                    <input type="password" id="apellido_p_usuario">
+                    <input type="text" id="apellido_p_usuario">
                 </div><br>
 
                 <div class="form-field">
@@ -106,7 +106,7 @@
 
 
                 <div class="form-field center-align">
-                    <button class="btn-large blue-grey">Agregar Perfil</button>
+                    <input type="submit" value="Insertar" onclick='return(verif(this.form)); MM_validateForm()' class="btn col s12">
                 </div><br>
 
             </div>

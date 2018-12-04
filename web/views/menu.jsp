@@ -7,10 +7,11 @@
                     <li>
                         <a href="#!" class="waves-effect waves-block waves-light profile-button"
                            data-activates="document-dropdown">
-                            <i class="material-icons left">assignment_ind</i>Perfil
+                            <a href="perfil.jsp">
+                                <i class="material-icons left">assignment_ind</i>Perfil</a>
                         </a>
                     <li>
-                        <a href="manual.jsp">
+                        <a href="crearusuario.jsp">
                             <i class="material-icons left">account_circle</i>Usuario</a>
                     </li>
                     <li><a href="acercade.jsp"><i class="material-icons left">help</i>Acerca de</a></li>
