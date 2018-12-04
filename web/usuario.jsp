@@ -38,7 +38,7 @@
 <!-- Login form -->
 
 <div class="row login">
-    <div class="col s12">
+    <div class="col s12" action="crearusuario.jsp" method="post">
         <div class="card">
             <div class="row center">
 
@@ -49,27 +49,27 @@
             </div>
             <div class="card-content">
                 <div class="form-field">
-                    <label for="username">Nombre Usuario</label>
-                    <input type="text" id="username">
+                    <label for="usuario" name="nombre">Nombre Usuario</label>
+                    <input type="text" id="usuario">
                 </div><br>
 
                 <div class="form-field">
-                    <label for="Contrasena">Contrasena</label>
-                    <input type="password" id="Contrasena">
+                    <label for="password" name="contrasena">Contrasena</label>
+                    <input type="password" id="password">
                 </div><br>
 
                 <div class="form-field">
-                    <label name="fecha">Fecha de creacion</label>
-                    <input name="fecha" type="date">
+                    <label name="last_access">Fecha de creacion</label>
+                    <input name="last_access" type="date">
                 </div><br>
 
                 <div class="form-field">
-                    <label for="tipoUsuario">Tipo de Usuario</label>
-                    <input type="text" id="tipoUsuario">
+                    <label for="tipoUsuario_idtipoUsuario" name="tipousuario">Tipo de Usuario</label>
+                    <input type="text" id="tipoUsuario_idtipoUsuario">
                 </div><br>
 
                 <div class="form-field center-align">
-                    <button class="btn-large blue-grey">Crear</button>
+                    <input type="submit" value="Insertar" onclick='return(verif(this.form)); MM_validateForm()' class="btn col s12">
                 </div><br>
 
             </div>

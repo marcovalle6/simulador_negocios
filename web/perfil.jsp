@@ -38,7 +38,7 @@
 <!-- Login form -->
 
 <div class="row perfil">
-    <div class="col s12" action="crearperfil.jsp" method="post">
+    <div class="col s12" action="/crearperfil.jsp" method="post">
         <div class="card">
             <div class="row center">
 
