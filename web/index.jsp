@@ -4,7 +4,7 @@
 
 
   <div class="container">
-      <h1 class="header center orange-text"><img src="images/prueba.jpg" class="responsive-img"></h1>
+      <h1 class="header center orange-text"><img src="images/bienvenido.png" class="responsive-img"></h1>
       <div class="row center">
           <p>Proyecto Sistema Academico</p>
       </div>
