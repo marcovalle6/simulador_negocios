@@ -3,19 +3,20 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <%
-    String nombre_usuario = request.getParameter("nombreUsuario");
-    String apellido_p_usuario = request.getParameter("apellidoPaterno");
-    String apellido_m_usuario = request.getParameter("apellidoMaterno");
-    String rfc_usuario = request.getParameter("rfcUsuario");
-    String email_usuario = request.getParameter("emailUsuario");
-    String telefono_usuario = request.getParameter("telefonoUsuario");
-    String domicilio_usuario = request.getParameter("domicilioUsuario");
-    String colonia_usuario = request.getParameter("coloniaUsuario");
-    String codigo_postal_usuario = request.getParameter("codigoPostal");
-    String ciudad_usuario = request.getParameter("ciudadUsuario");
-    String estado_usuario = request.getParameter("estadoUsuario");
-
     int idperfil = 0;
+
+    String nombre_usuario = request.getParameter("nombre_usuario");
+    String apellido_p_usuario = request.getParameter("apellido_p_usuario");
+    String apellido_m_usuario = request.getParameter("apellido_m_usuario");
+    String rfc_usuario = request.getParameter("rfc_usuario");
+    String email_usuario = request.getParameter("email_usuario");
+    String telefono_usuario = request.getParameter("telefono_usuario");
+    String domicilio_usuario = request.getParameter("domicilio_usuario");
+    String colonia_usuario = request.getParameter("colonia_usuario");
+    String codigo_postal_usuario = request.getParameter("codigo_postal_usuario");
+    String ciudad_usuario = request.getParameter("ciudad_usuario");
+    String estado_usuario = request.getParameter("estado_usuario");
+
 
     try {
 

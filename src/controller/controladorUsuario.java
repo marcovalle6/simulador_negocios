@@ -16,11 +16,11 @@ public class controladorUsuario {
     public static void main(String[] args){
         controladorUsuario cc = new controladorUsuario();
         //Agregar un elemnto
-       //System.out.println(cc.agregarUsuario(new Usuario(1, "Leonel", "leonelgv", "2018-11-21", 1 )));
+       System.out.println(cc.agregarUsuario(new Usuario(1, "Leonel", "leonelgv", "2018-11-21", 1 )));
 
 
         //Listar todos los elementos de la tabla
-        ArrayList<Usuario> Usuarios = new ArrayList<Usuario>();
+   /*     ArrayList<Usuario> Usuarios = new ArrayList<Usuario>();
         Usuarios = cc.obtenerUsuarios();
         for (int a=0;a<Usuarios.size();a++){
             //System.out.println("idusuario: " + Usuarios.get(a).getIdusuario());
@@ -45,7 +45,7 @@ public class controladorUsuario {
             System.out.println("tipoUsuario_idtipoUsuario: " +Usuarios.get(b).getTipoUsuario_idtipoUsuario());
 
             System.out.println();
-        }
+        } */
 
         //Modificar un elemento
         //System.out.println(cc.actualizarUsuario(new Usuario(1, "Leonel", "leonelgv", "2018-11-19", 3)));

@@ -11,7 +11,7 @@
                                 <i class="material-icons left">assignment_ind</i>Perfil</a>
                         </a>
                     <li>
-                        <a href="crearusuario.jsp">
+                        <a href="usuario.jsp">
                             <i class="material-icons left">account_circle</i>Usuario</a>
                     </li>
                     <li><a href="acercade.jsp"><i class="material-icons left">help</i>Acerca de</a></li>

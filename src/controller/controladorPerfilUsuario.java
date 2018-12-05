@@ -14,7 +14,7 @@ public class controladorPerfilUsuario {
     public static void main(String[] args){
         controladorPerfilUsuario cc = new controladorPerfilUsuario();
         //Agregar un elemnto
-        //System.out.println(cc.agregarPerfilUsuario(new Perfil(6, "Leonel", "Gonzalez", "Vidales", "LEGV12345", "leonelgv@gmail.com", "6726302", "Morelos", "Linda vista", "40660", "Altamirano", "Guerrero")));
+        System.out.println(cc.agregarPerfilUsuario(new Perfil(6, "Leonel", "Gonzalez", "Vidales", "LEGV12345", "leonelgv@gmail.com", "6726302", "Morelos", "Linda vista", "40660", "Altamirano", "Guerrero")));
 
 
         //Listar todos los elementos de la tabla
@@ -58,10 +58,10 @@ public class controladorPerfilUsuario {
         }
 
         //Modificar un elemento
-        //System.out.println(cc.actualizarPerfil(new Perfil(6, "Leonel", "Gonzalez", "Vidales", "LEGV12345", "leonelgv@gmail.com", "6726302", "Morelos", "Linda vista", "40664", "Altamirano", "Guerrero")));
+        System.out.println(cc.actualizarPerfil(new Perfil(6, "Leonel", "Gonzalez", "Vidales", "LEGV12345", "leonelgv@gmail.com", "6726302", "Morelos", "Linda vista", "40664", "Altamirano", "Guerrero")));
 
         //Eliminarar un elemento
-       //System.out.println(cc.eliminarPerfil( 6));
+       System.out.println(cc.eliminarPerfil( 6));
 
 
     }

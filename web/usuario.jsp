@@ -38,7 +38,7 @@
 <!-- Login form -->
 
 <div class="row login">
-    <div class="col s12" action="crearusuario.jsp" method="post">
+    <form class="col s12" action="crearusuario.jsp" method="post">
         <div class="card">
             <div class="row center">
 
@@ -48,24 +48,30 @@
                 </div>
             </div>
             <div class="card-content">
+
                 <div class="form-field">
-                    <label for="usuario" name="nombre">Nombre Usuario</label>
-                    <input type="text" id="usuario">
+                    <label for="idusuario">Id Usuario</label>
+                    <input name="idusuario" type="number" id="idusuario">
+                </div><br>
+
+                <div class="form-field">
+                    <label for="usuario">Nombre Usuario</label>
+                    <input name="usuario" type="text" id="usuario">
                 </div><br>
 
                 <div class="form-field">
                     <label for="password" name="contrasena">Contrasena</label>
-                    <input type="password" id="password">
+                    <input name="password" type="password" id="password">
                 </div><br>
 
                 <div class="form-field">
-                    <label name="last_access">Fecha de creacion</label>
-                    <input name="last_access" type="date">
+                    <label for="last_access">Fecha de creacion</label>
+                    <input name="last_access" id="last_access" type="date">
                 </div><br>
 
                 <div class="form-field">
                     <label for="tipoUsuario_idtipoUsuario" name="tipousuario">Tipo de Usuario</label>
-                    <input type="text" id="tipoUsuario_idtipoUsuario">
+                    <input name="tipoUsuario_idtipoUsuario" type="text" id="tipoUsuario_idtipoUsuario">
                 </div><br>
 
                 <div class="form-field center-align">
@@ -74,7 +80,7 @@
 
             </div>
         </div>
-    </div>
+    </form>
 </div>
 
 
