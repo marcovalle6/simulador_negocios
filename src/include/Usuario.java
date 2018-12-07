@@ -10,6 +10,7 @@ public class Usuario {
     private int tipoUsuario_idtipoUsuario;
 
 
+
     public Usuario(int idusuario, String usuario, String password, String last_access, int tipoUsuario_idtipoUsuario) {
         this.idusuario = idusuario;
         this.usuario = usuario;

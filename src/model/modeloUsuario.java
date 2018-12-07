@@ -1,6 +1,7 @@
 package model;
 
 import include.Usuario;
+import include.tipodeusuario;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -45,7 +46,32 @@ public class modeloUsuario  extends conexion {
 
 
 
+    public ArrayList<tipodeusuario> obtenerIdtipodeusuarioFK() {
+        ArrayList<tipodeusuario> tipodeusuario = new ArrayList<tipodeusuario>();
+        PreparedStatement pst = null;
+        ResultSet rs = null;
+        try {
+            String consulta = "SELECT idtipoUsuario, nombre FROM tipoUsuario ";
+            pst = getConection().prepareCall(consulta);
+            rs = pst.executeQuery();
+            while (rs.next()) {
+                tipodeusuario.add(new tipodeusuario(
+                        rs.getInt("idtipoUsuario"),
+                        rs.getString("nombre")));
+            }
+        } catch (Exception e) {
 
+        } finally {
+            try {
+                if (getConection() != null) getConection().close();
+                if (pst != null) pst.close();
+                if (rs != null) rs.close();
+            } catch (Exception e) {
+
+            }
+        }
+        return tipodeusuario;
+    }
 
     public ArrayList<Usuario> obtenerUsuarios() {
         ArrayList<Usuario> Usuarios = new ArrayList<Usuario>();
@@ -78,7 +104,6 @@ public class modeloUsuario  extends conexion {
         }
         return Usuarios;
     }
-
 
 
     public ArrayList<Usuario> obtenerUsuario(int Idusuario){

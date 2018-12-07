@@ -16,6 +16,33 @@
     <script type="text/javascript" src="js/sweetalert.min.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
     <script type="text/javascript" src="js/alertas.js"></script>
+
+    <script>
+        function delete_usuario(id_to_delete)
+        {
+            var confirmation = confirm(String.fromCharCode(191)+'Est\u00E1 seguro de que desea eliminar el usuario con id '+ id_to_delete);
+
+            if(confirmation)
+            {
+                window.location = "borrar_usuario.jsp?idusuario="+id_to_delete;
+            }
+        }
+    </script>
+
+    <script>
+        function delete_perfil(id_to_delete)
+        {
+            var confirmation = confirm(String.fromCharCode(191)+'Est\u00E1 seguro de que desea eliminar el perfil con id '+ id_to_delete);
+
+            if(confirmation)
+            {
+                window.location = "borrar_perfil.jsp?idperfil="+id_to_delete;
+            }
+        }
+    </script>
+
+
+
 </head>
 <body>
 <!--Import jQuery before materialize.js-->

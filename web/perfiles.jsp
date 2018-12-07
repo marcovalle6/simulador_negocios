@@ -55,9 +55,9 @@
                                     + "</td><td>" + perfiles.get(a).getCiudad_usuario()
                                     + "</td><td>" + perfiles.get(a).getEstado_usuario()
 
-                                    + "<td><a class=\"btn\" href=\"#\"><i class=\"material-icons\">zoom_in</i></a>"
-                                    + "<a class=\"btn blue\" href=\"#\"><i class=\"material-icons\">create</i></a>"
-                                    + "<a class=\"btn red\" href=\"#\"><i class=\"material-icons\">delete</i></a>"
+                                    + "<td><a class=\"btn blue\" href=\"modificarperfil.jsp?idperfil="+perfiles.get(a).getIdperfil()+"\"><i class=\"material-icons\">create</i></a>"
+                                    + "<a class=\"btn red\" onclick=\"delete_perfil('"+ perfiles.get(a).getIdperfil()+"')\"><i class=\"material-icons\">delete</i></a>"
+
                                     + "</td></tr>";
                         }
                     } else{

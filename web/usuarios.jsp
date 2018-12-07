@@ -42,13 +42,12 @@
                                     + "</td><td>" + usuarios.get(a).getTipoUsuario_idtipoUsuario()
 
 
-                                    + "<td><a class=\"btn\" href=\"#\"><i class=\"material-icons\">zoom_in</i></a>"
-                                    + "<a class=\"btn blue\" href=\"#\"><i class=\"material-icons\">create</i></a>"
-                                    + "<a class=\"btn red\" href=\"#\"><i class=\"material-icons\">delete</i></a>"
+                                    + "<td><a class=\"btn blue\" href=\"modificarusuario.jsp?idusuario="+usuarios.get(a).getIdusuario()+"\"><i class=\"material-icons\">create</i></a>"
+                                   + "<a class=\"btn red\" onclick=\"delete_usuario("+usuarios.get(a).getIdusuario()+")\"><i class=\"material-icons\">delete</i></a>"
                                     + "</td></tr>";
                         }
                     } else{
-                        htmlcode += "<tr><td colspan=\"10\">No existen perfiles</td></tr>";
+                        htmlcode += "<tr><td colspan=\"10\">No existen usuarios</td></tr>";
                     }
                     htmlcode += "</tbody>";
                     out.print(htmlcode);

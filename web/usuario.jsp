@@ -1,3 +1,8 @@
+<%@ page import="controller.controladorUsuario" %>
+<%@ page import="include.Usuario" %>
+<%@ page import="include.tipodeusuario" %>
+<%@ page import="java.util.ArrayList" %>
+
 <jsp:include page='views/header.jsp'></jsp:include>
 
 
@@ -36,6 +41,22 @@
 
 
 <!-- Login form -->
+<%
+    controladorUsuario cc = new controladorUsuario();
+    ArrayList<tipodeusuario> tipodeusuario = new ArrayList<tipodeusuario>();
+    tipodeusuario = cc.obtenerIdtipodeusuarioFK();
+
+
+    String htmlselect = "";
+    htmlselect += "<select name=\"tipoUsuario_idtipoUsuario\">\n" +
+            "                <option value=\"\" selected disabled>Elige el tipo de usuario" +
+            "</option>\n";
+    for(int a=0; a<tipodeusuario.size();a++){
+        htmlselect += "<option value=\""+tipodeusuario.get(a).getIdtipoUsuario()+"\">"+tipodeusuario.get(a).getNombre()+"</option>\n";
+    }
+    htmlselect += "            </select>";
+
+%>
 
 <div class="row login">
     <form class="col s12" action="crearusuario.jsp" method="post">
@@ -69,11 +90,9 @@
                     <input name="last_access" id="last_access" type="date">
                 </div><br>
 
-                <div class="form-field">
-                    <label for="tipoUsuario_idtipoUsuario" name="tipousuario">Tipo de Usuario</label>
-                    <input name="tipoUsuario_idtipoUsuario" type="text" id="tipoUsuario_idtipoUsuario">
-                </div><br>
-
+                <%
+                    out.print(htmlselect);
+                %>
                 <div class="form-field center-align">
                     <input type="submit" value="Insertar" onclick='return(verif(this.form)); MM_validateForm()' class="btn col s12">
                 </div><br>
